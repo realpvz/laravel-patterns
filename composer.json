@@ -1,0 +1,41 @@
+{
+    "name": "realpvz/laravel-patterns",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/realpvz/services",
+    "keywords": ["Laravel", "Services", "Laravel Patterns"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Realpvz\\Services\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Realpvz\\Services\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Realpvz\\Services\\ServicesServiceProvider"
+            ],
+            "aliases": {
+                "Services": "Realpvz\\Services\\Facades\\Services"
+            }
+        }
+    }
+}
