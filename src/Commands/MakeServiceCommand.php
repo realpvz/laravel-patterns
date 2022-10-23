@@ -49,7 +49,7 @@ class MakeServiceCommand extends GeneratorCommand
 
     protected function getStub(): string
     {
-        $stubPath = '../Stubs/service.stub';
+        $stubPath = __DIR__.'/../Stubs/service.stub';
         $customPath = $this->laravel->basePath('stubs/service.stub');
         return file_exists($customPath) ? $customPath : $stubPath;
     }
